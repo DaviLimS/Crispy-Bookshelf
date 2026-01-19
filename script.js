@@ -21,3 +21,6 @@ function addBookToLibrary() {
     let a = crypto.randomUUID();
     myLibrary.push(new Book(name1, author1, pages1, read1, a))
 }
+
+function removeBookFromLibrary() {
+}
