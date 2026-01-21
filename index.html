@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,21 @@
       <div class="initial-field">
         <h1>Your entire book catalog in one crisp place.</h1>
         <button class="modal-button">New Book</button>
+      </div>
+      <div class="modal hidden" id="book-modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="close">x</button>
+          <form id="book-form">
+            <label>Title <input type="text" name="name" required /></label>
+            <label>Author <input type="text" name="author" /></label>
+            <label>Pages <input type="number" name="pages" min="1" /></label>
+            <label><input type="checkbox" name="read" />Read?</label>
+          </form>
+          <div class="form-actions">
+            <button type="submit">Add</button>
+            <button type="button" class="mdal-cancel">Cancel</button>
+          </div>
+        </div>
       </div>
       <div class="bookshelf"></div>
     </main>
