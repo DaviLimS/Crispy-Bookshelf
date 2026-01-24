@@ -72,20 +72,11 @@ main {
     background-color: black;
 }
 
-.checkbox-container {
-    display: flex;
-    align-items: center;
-}
-
 .checkbox-label {
     display: flex;
-    justify-self: center;
+    justify-self: start;
+    align-items: start;
     gap: 0.5rem;
-}
-
-.checkbox {
-    margin-left: 0.25rem;
-    align-self: center;
 }
 
 .form-actions {
