@@ -60,25 +60,32 @@ main {
     margin-left: -2rem;
 }
 
-#book-form label {
+#book-form .normal {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 
 #book-form input {
-    width: 90%;
+    margin-bottom: 1rem;
+    width: 100%;
     background-color: black;
 }
 
-.checkbox-div {
+.checkbox-container {
     display: flex;
-    justify-content: start;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
+    align-items: center;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-self: center;
+    gap: 0.5rem;
 }
 
 .checkbox {
-    box-sizing: content-box;
+    margin-left: 0.25rem;
+    align-self: center;
 }
 
 .form-actions {

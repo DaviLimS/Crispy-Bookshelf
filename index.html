@@ -16,16 +16,13 @@
         <div class="modal-content">
           <button class="modal-close" aria-label="close">x</button>
           <form id="book-form">
-            <label>Title <input type="text" name="name" required /></label>
-            <label>Author <input type="text" name="author" /></label>
-            <label>Pages <input type="number" name="pages" min="1" /></label>
-            <div class="checkbox-div">
-              <label class="checkbox-label">Read?</label>
-              <input
-                  class="checkbox"
-                  type="checkbox"
-                  name="read"
-                />
+            <label class="normal">Title <input type="text" name="name" required /></label>
+            <label class="normal">Author <input type="text" name="author" /></label>
+            <label class="normal">Pages <input type="number" name="pages" min="1" /></label> 
+            <div class="checkbox-container">
+              <label class="checkbox-label"
+              ><input class="checkbox" type="checkbox" name="read"
+            /> Read</label>
             </div>
           </form>
           <div class="form-actions">
