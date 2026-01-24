@@ -48,6 +48,12 @@ main {
     flex-direction: column;
 }
 
+.modal-close {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 #book-form {
     width: 100%;
 }
