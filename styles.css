@@ -54,8 +54,20 @@ main {
 
 .modal-close {
     align-self: flex-end;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: medium;
+    transition: all 400ms;
+}
+
+.modal-close:hover {
+    border: none;
+    transform: scale(1.3);    
+    cursor: pointer;
 }
 
 #book-form {
