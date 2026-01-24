@@ -47,8 +47,18 @@ main {
     align-items: center;
 }
 
-.book-form {
+#book-form {
     width: 100%;
+}
+
+#book-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+#book-form input {
+    width: 70%;
+    background-color: black;
 }
 
 .modal-button {
