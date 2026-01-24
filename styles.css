@@ -33,8 +33,8 @@ main {
 }
 
 .modal {
-    width: 30rem;
-    height: 12rem;
+    width: 32rem;
+    height: 16rem;
     justify-self: center;
     align-self: center;
 }
@@ -63,7 +63,6 @@ main {
 #book-form .normal {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
 }
 
 #book-form input {
