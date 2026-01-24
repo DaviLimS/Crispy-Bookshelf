@@ -55,7 +55,9 @@ main {
 }
 
 #book-form {
-    width: 100%;
+    justify-self: start;
+    width: 80%;
+    margin-left: -2rem;
 }
 
 #book-form label {
@@ -64,7 +66,7 @@ main {
 }
 
 #book-form input {
-    width: 70%;
+    width: 90%;
     background-color: black;
 }
 
