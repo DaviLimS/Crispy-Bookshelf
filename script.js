@@ -3,6 +3,8 @@ const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
 const closeButtons = document.querySelector('#close');
 
+bookModal.showModal(); //for tests
+
 newBookButton.addEventListener('click', () => {
     bookModal.showModal();
 });

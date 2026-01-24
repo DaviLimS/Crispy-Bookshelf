@@ -37,6 +37,10 @@ main {
     height: 16rem;
     justify-self: center;
     align-self: center;
+    border: none;
+    background-color: rgba(117, 117, 117, 0.493);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
 }
 
 .modal-content {
