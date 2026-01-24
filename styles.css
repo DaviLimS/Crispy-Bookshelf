@@ -70,6 +70,14 @@ main {
     cursor: pointer;
 }
 
+.add-button {
+    background-image: linear-gradient(to right top, rgb(83, 83, 255), rgb(86, 221, 255));
+}
+
+.cancel-button {
+    background-image: linear-gradient(to right top, #ff2727, rgb(255, 153, 106));
+}
+
 #book-form {
     justify-self: start;
     width: 80%;
