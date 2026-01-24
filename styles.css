@@ -45,6 +45,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
 
 #book-form {
@@ -59,6 +60,14 @@ main {
 #book-form input {
     width: 70%;
     background-color: black;
+}
+
+.form-actions {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .modal-button {
