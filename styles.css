@@ -70,6 +70,17 @@ main {
     background-color: black;
 }
 
+.checkbox-div {
+    display: flex;
+    justify-content: start;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.checkbox {
+    box-sizing: content-box;
+}
+
 .form-actions {
     display: flex;
     width: 100%;

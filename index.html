@@ -19,7 +19,14 @@
             <label>Title <input type="text" name="name" required /></label>
             <label>Author <input type="text" name="author" /></label>
             <label>Pages <input type="number" name="pages" min="1" /></label>
-            <label><input type="checkbox" name="read" />Read?</label>
+            <div class="checkbox-div">
+              <label class="checkbox-label">Read?</label>
+              <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="read"
+                />
+            </div>
           </form>
           <div class="form-actions">
             <button type="submit">Add</button>
