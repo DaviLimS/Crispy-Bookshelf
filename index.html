@@ -14,18 +14,25 @@
       </div>
       <dialog class="modal" id="book-modal">
         <div class="modal-content">
-          <button class="modal-close" aria-label="close">x</button>
+          <button class="modal-close" id="close" aria-label="close">x</button>
           <form id="book-form">
-            <label class="normal">Title <input type="text" name="name" required /></label>
-            <label class="normal">Author <input type="text" name="author" /></label>
-            <label class="normal">Pages <input type="number" name="pages" min="1" /></label> 
+            <label class="normal"
+              >Title <input type="text" name="name" required
+            /></label>
+            <label class="normal"
+              >Author <input type="text" name="author"
+            /></label>
+            <label class="normal"
+              >Pages <input type="number" name="pages" min="1"
+            /></label>
             <label class="checkbox-label"
-              ><input class="checkbox" type="checkbox" name="read"
-            /> Read</label>
+              ><input class="checkbox" type="checkbox" name="read" />
+              Read</label
+            >
           </form>
           <div class="form-actions">
-            <button type="submit">Add</button>
-            <button type="button" class="mdal-cancel">Cancel</button>
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn" id="close">Cancel</button>
           </div>
         </div>
       </dialog>

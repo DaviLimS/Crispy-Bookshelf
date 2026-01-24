@@ -1,9 +1,14 @@
 const myLibrary = []
 const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
+const closeButtons = document.querySelector('#close');
 
 newBookButton.addEventListener('click', () => {
     bookModal.showModal();
+});
+
+closeButtons.addEventListener('click', () => {
+    bookModal.close();
 });
 
 let name1 = 'fzljzdfj'
