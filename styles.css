@@ -90,6 +90,16 @@ main {
     gap: 3rem;
 }
 
+.btn {
+    width: 5rem;
+    height: 1.6rem;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
 .modal-button {
     width: 7rem;
     height: 2rem;
