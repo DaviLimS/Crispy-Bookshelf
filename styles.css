@@ -75,7 +75,7 @@ main {
 }
 
 .cancel-button {
-    background-image: linear-gradient(to right top, #ff2727, rgb(255, 153, 106));
+    background-image: linear-gradient(to right top, #ff2727, rgb(255, 208, 106));
 }
 
 #book-form {
