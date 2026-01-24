@@ -39,7 +39,17 @@ main {
     align-self: center;
 }
 
+.modal-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.book-form {
+    width: 100%;
+}
 
 .modal-button {
     width: 7rem;
