@@ -32,6 +32,15 @@ main {
     font-size: 2.5em;
 }
 
+.modal {
+    width: 30rem;
+    height: 12rem;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
 .modal-button {
     width: 7rem;
     height: 2rem;

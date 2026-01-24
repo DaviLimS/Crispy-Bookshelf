@@ -1,4 +1,6 @@
 const myLibrary = []
+const bookModal = document.querySelector('#book-modal');
+bookModal.showModal()
 
 let name1 = 'fzljzdfj'
 let author1 = 'zldfkmzlkk'

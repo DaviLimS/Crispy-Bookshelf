@@ -12,7 +12,7 @@
         <h1>Your entire book catalog in one crisp place.</h1>
         <button class="modal-button">New Book</button>
       </div>
-      <div class="modal hidden" id="book-modal" aria-hidden="true">
+      <dialog class="modal" id="book-modal">
         <div class="modal-content">
           <button class="modal-close" aria-label="close">x</button>
           <form id="book-form">
@@ -26,7 +26,7 @@
             <button type="button" class="mdal-cancel">Cancel</button>
           </div>
         </div>
-      </div>
+      </dialog>
       <div class="bookshelf"></div>
     </main>
     <script src="script.js"></script>
