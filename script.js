@@ -24,8 +24,9 @@ addButton.addEventListener('click', (e) => {
     const name = document.querySelector('#name').value.trim();
     const author = document.querySelector('#author').value.trim();
     const pages = parseInt(document.querySelector('#pages').value, 10) || 0;
+    const read = document.querySelector('#read').type === 'checkbox' ? document.querySelector('#read').checked ? 'Yes' : 'No' : document.querySelector('#read').value.trim();
 
-    console.log(`${name}, ${author}, ${pages}`)
+    console.log(read)
 });
 
 let name1 = 'fzljzdfj'
