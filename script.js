@@ -3,6 +3,7 @@ const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
 const closeButton = document.querySelector('#close');
 const cancelButton = document.querySelector('#cancel');
+const addButton = document.querySelector('.add-button');
 
 bookModal.showModal(); //for tests
 
@@ -16,6 +17,14 @@ closeButton.addEventListener('click', () => {
 cancelButton.addEventListener('click', () => {
     bookModal.close();
 })
+
+addButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector('#name').value.trim();
+    const author = document.querySelector('#author').value.trim();
+    const pages = parseInt(document.querySelector('#name').value, 10) || 0;
+});
 
 let name1 = 'fzljzdfj'
 let author1 = 'zldfkmzlkk'
