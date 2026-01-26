@@ -23,7 +23,9 @@ addButton.addEventListener('click', (e) => {
 
     const name = document.querySelector('#name').value.trim();
     const author = document.querySelector('#author').value.trim();
-    const pages = parseInt(document.querySelector('#name').value, 10) || 0;
+    const pages = parseInt(document.querySelector('#pages').value, 10) || 0;
+
+    console.log(`${name}, ${author}, ${pages}`)
 });
 
 let name1 = 'fzljzdfj'
