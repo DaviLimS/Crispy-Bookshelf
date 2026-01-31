@@ -5,6 +5,7 @@ const newBookButton = document.querySelector('.modal-button');
 const closeButton = document.querySelector('#close');
 const cancelButton = document.querySelector('#cancel');
 const addButton = document.querySelector('.add-button');
+const bookshelf = document.querySelector('.bookshelf');
 
 bookModal.showModal(); //for tests
 
@@ -54,7 +55,7 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     let book = document.createElement('div');
     book.textContent = `Título: ${myLibrary[i].name}`
     book.id = myLibrary[i].id
-
+    bookshelf.appendChild(book)
     i++;
 }
 
