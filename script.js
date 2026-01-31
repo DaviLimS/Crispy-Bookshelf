@@ -54,6 +54,8 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     let book = document.createElement('div');
     book.textContent = `Título: ${myLibrary[i].name}`
     book.id = myLibrary[i].id
+
+    i++;
 }
 
 function removeBookFromLibrary() {
