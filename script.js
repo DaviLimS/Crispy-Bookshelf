@@ -29,6 +29,8 @@ addButton.addEventListener('click', (e) => {
     const read = document.querySelector('#read').type === 'checkbox' ? document.querySelector('#read').checked ? 'Yes' : 'No' : document.querySelector('#read').value.trim();
 
     addBookToLibrary(name, author, pages, read)
+
+    bookModal.close();
 });
 
 let name1 = 'fzljzdfj'
