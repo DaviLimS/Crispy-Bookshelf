@@ -84,7 +84,7 @@ main {
     justify-content: space-between;
     justify-self: start;
     width: 80%;
-    margin-left: -2rem;
+    margin-top: -5%;
 }
 
 #book-form .normal {
@@ -110,7 +110,6 @@ main {
 .form-actions {
     display: flex;
     width: 100%;
-    align-self: center;
     justify-content: center;
     gap: 3rem;
 }
