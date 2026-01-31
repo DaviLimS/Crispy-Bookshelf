@@ -53,7 +53,7 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     myLibrary.push(new Book(name1, author1, pages1, read1, a))
 
     let book = document.createElement('div');
-    book.textContent = `Título: ${myLibrary[i].name}`
+    book.textContent = `Title: ${myLibrary[i].name} Author: ${myLibrary[i].author} Pages: ${myLibrary[i].pages} Read: ${myLibrary[i].read}`
     book.id = myLibrary[i].id
     bookshelf.appendChild(book)
     i++;
