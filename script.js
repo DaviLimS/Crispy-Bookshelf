@@ -1,4 +1,5 @@
 const myLibrary = []
+let i = 0;
 const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
 const closeButton = document.querySelector('#close');
@@ -18,7 +19,7 @@ cancelButton.addEventListener('click', () => {
     bookModal.close();
 })
 
-addButton.addEventListener('submit', (e) => {
+addButton.addEventListener('click', (e) => {
     e.preventDefault();
 
     const name = document.querySelector('#name').value.trim();
@@ -26,6 +27,7 @@ addButton.addEventListener('submit', (e) => {
     const pages = parseInt(document.querySelector('#pages').value, 10) || 0;
     const read = document.querySelector('#read').type === 'checkbox' ? document.querySelector('#read').checked ? 'Yes' : 'No' : document.querySelector('#read').value.trim();
 
+    addBookToLibrary(name, author, pages, read)
 });
 
 let name1 = 'fzljzdfj'
@@ -45,9 +47,13 @@ function Book(name, author, pages, read, id) {
     this.id = id;
 }
 
-function addBookToLibrary() {
+function addBookToLibrary(name1, author1, pages1, read1) {
     let a = crypto.randomUUID();
     myLibrary.push(new Book(name1, author1, pages1, read1, a))
+
+    let book = document.createElement('div');
+    book.textContent = `Título: ${myLibrary[i].name}`
+    book.id = myLibrary[i].id
 }
 
 function removeBookFromLibrary() {
