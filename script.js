@@ -7,8 +7,6 @@ const cancelButton = document.querySelector('#cancel');
 const addButton = document.querySelector('.add-button');
 const bookshelf = document.querySelector('.bookshelf');
 
-bookModal.showModal(); //for tests
-
 newBookButton.addEventListener('click', () => {
     bookModal.showModal();
 });
@@ -63,3 +61,4 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 
 function removeBookFromLibrary() {
 }
+

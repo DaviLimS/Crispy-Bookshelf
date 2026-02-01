@@ -23,7 +23,8 @@
               >Author <input type="text" name="author" id="author" required
             /></label>
             <label class="normal"
-              >Pages <input type="number" name="pages" min="1" id="pages" required
+              >Pages
+              <input type="number" name="pages" min="1" id="pages" required
             /></label>
             <label class="checkbox-label"
               ><input class="checkbox" type="checkbox" name="read" id="read" />
@@ -39,7 +40,19 @@
           </form>
         </div>
       </dialog>
-      <div class="bookshelf"></div>
+      <div class="bookshelf">
+        <template class="book-card-template">
+          <div class="book-card">
+            <button type="button" class="delete-card">X</button>
+            <div class="book-infos">
+              <h3 class="title"></h3>
+              <p class="author"></p>
+              <p class="pages"></p>
+              <p class="read"></p>
+            </div>
+          </div>
+        </template>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
