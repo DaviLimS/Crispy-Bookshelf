@@ -58,15 +58,15 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     book.querySelector('.author').textContent = `Author: ${myLibrary[i].author}`;
     book.querySelector('.pages').textContent = `Pages: ${myLibrary[i].pages}`;
     book.querySelector('.read').textContent = `Read: ${myLibrary[i].read}`;
-    book.id = myLibrary[i].id
-    bookshelf.appendChild(book)
+    book.id = myLibrary[i].id;
+    bookshelf.appendChild(book);
+    bookCardDelete.setAttribute('class', myLibrary[i].id);
     i++;
 }
 
+addBookToLibrary(name_, author_, pages_, read_);
+
 const bookCardDelete = bookCardTemplate.querySelector('.delete-card');
-const deleteVerify = document.querySelector('.delete-verify');
 bookCardDelete.addEventListener('click', () => {
     
 });
-
-addBookToLibrary(name_, author_, pages_, read_);
