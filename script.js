@@ -63,7 +63,10 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     i++;
 }
 
-function removeBookFromLibrary() {
-}
+const bookCardDelete = bookCardTemplate.querySelector('.delete-card');
+const deleteVerify = document.querySelector('.delete-verify');
+bookCardDelete.addEventListener('click', () => {
+    
+});
 
 addBookToLibrary(name_, author_, pages_, read_);
