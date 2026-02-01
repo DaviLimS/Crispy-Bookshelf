@@ -32,10 +32,10 @@ addButton.addEventListener('click', (e) => {
     bookModal.close();
 });
 
-let name1 = 'fzljzdfj'
-let author1 = 'zldfkmzlkk'
-let pages1 = 932;
-let read1 = 'Yes';
+let name_ = 'fzljzdfj'
+let author_ = 'zldfkmzlkk'
+let pages_ = 932;
+let read_ = 'Yes';
 
 function Book(name, author, pages, read, id) {
     if(!new.target) {
@@ -54,7 +54,10 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     myLibrary.push(new Book(name1, author1, pages1, read1, a))
 
     let book = bookCardTemplate.content.cloneNode(true);
-    book.querySelector('.title').textContent = `Title: ${myLibrary[i].name}`
+    book.querySelector('.title').textContent = `Title: ${myLibrary[i].name}`;
+    book.querySelector('.author').textContent = `Author: ${myLibrary[i].author}`;
+    book.querySelector('.pages').textContent = `Pages: ${myLibrary[i].pages}`;
+    book.querySelector('.read').textContent = `Read: ${myLibrary[i].read}`;
     book.id = myLibrary[i].id
     bookshelf.appendChild(book)
     i++;
@@ -63,4 +66,4 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 function removeBookFromLibrary() {
 }
 
-addBookToLibrary(name1, author1, pages1, read1);
+addBookToLibrary(name_, author_, pages_, read_);
