@@ -6,6 +6,7 @@ const closeButton = document.querySelector('#close');
 const cancelButton = document.querySelector('#cancel');
 const addButton = document.querySelector('.add-button');
 const bookshelf = document.querySelector('.bookshelf');
+const bookCardTemplate = document.querySelector('.book-card-template');
 
 newBookButton.addEventListener('click', () => {
     bookModal.showModal();
@@ -52,7 +53,7 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     let a = crypto.randomUUID();
     myLibrary.push(new Book(name1, author1, pages1, read1, a))
 
-    let book = document.createElement('div');
+    let book = bookCardTemplate.content.cloneNode(true);
     book.textContent = `Title: ${myLibrary[i].name} Author: ${myLibrary[i].author} Pages: ${myLibrary[i].pages} Read: ${myLibrary[i].read}`
     book.id = myLibrary[i].id
     bookshelf.appendChild(book)
@@ -62,3 +63,4 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 function removeBookFromLibrary() {
 }
 
+addBookToLibrary(name1, author1, pages1, read1);
