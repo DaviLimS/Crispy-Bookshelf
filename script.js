@@ -68,8 +68,13 @@ function addBookToLibrary(name1, author1, pages1, read1) {
         const cardToRemove = e.target.closest('.book-card');
         const cardId = cardToRemove.dataset.id;
         const idx = myLibrary.findIndex(b => b.id == cardId);
-        if (idx !== 1) myLibrary.splice(idx, 1)
-        cardToRemove.remove();
+        if (confirm('Do you want to delete this book? if you want to reverse this action, you will hae to recreate it')) {
+            if (idx !== 1) myLibrary.splice(idx, 1);
+            cardToRemove.remove();
+        }
+        else {
+            return
+        }
     });
 
     bookshelf.appendChild(book);
