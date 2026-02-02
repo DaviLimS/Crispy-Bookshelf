@@ -50,8 +50,9 @@ function Book(name, author, pages, read, id) {
 }
 
 function addBookToLibrary(name1, author1, pages1, read1) {
-    let a = crypto.randomUUID();
-    myLibrary.push(new Book(name1, author1, pages1, read1, a))
+    const a = crypto.randomUUID();
+    const bookObj = new Book(name1, author1, pages1, read1, a);
+    myLibrary.push(bookObj);
 
     let book = bookCardTemplate.content.cloneNode(true);
     book.querySelector('.title').textContent = `Title: ${myLibrary[i].name}`;
@@ -61,14 +62,15 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 
     const cardDiv = book.querySelector('.book-card');
     book.id = myLibrary[i].id;
-    cardDiv.setAttribute('data-id', book.id);
+    cardDiv.dataset.id = a;
 
     const bookDelete = book.querySelector('.delete-card');
-
     bookDelete.addEventListener('click', (e) => {
         const cardToRemove = e.target.closest('.book-card');
+        const cardId = cardToRemove.dataset.id;
+        const idx = myLibrary.findIndex(b => b.id == cardId);
+        if (idx !== 1) myLibrary.splice(idx, 1)
         cardToRemove.remove();
-        myLibrary.slice(i, 1);
     });
 
     bookshelf.appendChild(book);
