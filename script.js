@@ -1,5 +1,4 @@
 const myLibrary = []
-let i = 0;
 const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
 const closeButton = document.querySelector('#close');
@@ -55,10 +54,10 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     myLibrary.push(bookObj);
 
     let book = bookCardTemplate.content.cloneNode(true);
-    book.querySelector('.title').textContent = `Title: ${myLibrary[i].name}`;
-    book.querySelector('.author').textContent = `Author: ${myLibrary[i].author}`;
-    book.querySelector('.pages').textContent = `Pages: ${myLibrary[i].pages}`;
-    book.querySelector('.read').textContent = `Read: ${myLibrary[i].read}`;
+    book.querySelector('.title').textContent = `Title: ${bookObj.name}`;
+    book.querySelector('.author').textContent = `Author: ${bookObj.author}`;
+    book.querySelector('.pages').textContent = `Pages: ${bookObj.pages}`;
+    book.querySelector('.read').textContent = `Read: ${bookObj.read}`;
 
     const cardDiv = book.querySelector('.book-card');
     book.id = myLibrary[i].id;
@@ -74,7 +73,6 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     });
 
     bookshelf.appendChild(book);
-    i++;
 }
 
 addBookToLibrary(name_, author_, pages_, read_);
