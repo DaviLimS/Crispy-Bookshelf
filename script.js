@@ -69,6 +69,10 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     const confirmModal = book.querySelector('.delete-confirm');
     const confirmDeleteBtn = book.querySelector('.delete-it');
     const cancelDeleteBtn = book.querySelector('.cancel-delete');
+
+    bookDelete.addEventListener('click', () => {
+        confirmModal.showModal();
+    });
 }
 
 addBookToLibrary(name_, author_, pages_, read_);
