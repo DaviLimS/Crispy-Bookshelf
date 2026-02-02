@@ -82,4 +82,6 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     bookshelf.appendChild(book);
 }
 
+//For tests
+addBookToLibrary(name_, author_, pages_, read_);
 addBookToLibrary(name_, author_, pages_, read_);
