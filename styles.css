@@ -153,7 +153,10 @@ main {
 }
 
 .book-card {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 15px;
 }
