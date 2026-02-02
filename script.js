@@ -68,6 +68,7 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     bookDelete.addEventListener('click', (e) => {
         const cardToRemove = e.target.closest('.book-card');
         cardToRemove.remove();
+        myLibrary.slice(i, 1);
     });
 
     bookshelf.appendChild(book);
