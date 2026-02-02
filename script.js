@@ -1,6 +1,7 @@
 const myLibrary = []
 const bookModal = document.querySelector('#book-modal');
 const newBookButton = document.querySelector('.modal-button');
+const bookForm = document.querySelector('#book-form');
 const closeButton = document.querySelector('#close');
 const cancelButton = document.querySelector('#cancel');
 const addButton = document.querySelector('.add-button');
@@ -28,6 +29,7 @@ addButton.addEventListener('click', (e) => {
 
     addBookToLibrary(name, author, pages, read)
 
+    bookForm.reset();
     bookModal.close();
 });
 
