@@ -62,14 +62,16 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     const cardDiv = book.querySelector('.book-card');
     book.id = myLibrary[i].id;
     cardDiv.setAttribute('data-id', book.id);
-    bookshelf.appendChild(book);
-    i++;
 
     const bookDelete = book.querySelector('.delete-card');
 
-    bookDelete.addEventListener('click', () => {
-        
+    bookDelete.addEventListener('click', (e) => {
+        const cardToRemove = e.target.closest('.book-card');
+        cardToRemove.remove();
     });
+
+    bookshelf.appendChild(book);
+    i++;
 }
 
 addBookToLibrary(name_, author_, pages_, read_);
