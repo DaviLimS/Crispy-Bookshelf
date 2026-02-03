@@ -33,11 +33,6 @@ addButton.addEventListener('click', (e) => {
     bookModal.close();
 });
 
-let name_ = 'fzljzdfj'
-let author_ = 'zldfkmzlkk'
-let pages_ = 932;
-let read_ = 'Yes';
-
 function Book(name, author, pages, read, id) {
     if(!new.target) {
         throw new Error('You must call this function with the "new" operator before it');
@@ -94,7 +89,3 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 
     bookshelf.appendChild(book);
 }
-
-//For tests
-addBookToLibrary(name_, author_, pages_, read_);
-addBookToLibrary(name_, author_, pages_, read_);
