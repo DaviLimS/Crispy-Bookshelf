@@ -81,7 +81,12 @@ function addBookToLibrary(name1, author1, pages1, read1) {
 
     const readUpdate = book.querySelector(".read");
     readUpdate.addEventListener('click', (e) => {
-        e.target.innerText = 'Read: No'
+        if (e.target.innerText = 'Read: Yes') {
+            e.target.innerText = 'Read: No';
+        }
+        else {
+            e.target.innerText = 'Read: Yes';
+        }
     });
 
     bookshelf.appendChild(book);
