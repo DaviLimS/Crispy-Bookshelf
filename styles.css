@@ -160,3 +160,14 @@ main {
     border: 1px solid black;
     border-radius: 15px;
 }
+
+.delete-card {
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 1rem;
+    width: 1rem;
+}
+.delete-card:hover {
+    cursor: pointer;
+}
