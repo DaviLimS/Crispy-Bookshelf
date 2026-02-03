@@ -79,6 +79,9 @@ function addBookToLibrary(name1, author1, pages1, read1) {
         }
     });
 
+    const readUpdate = book.querySelector(".read");
+    
+
     bookshelf.appendChild(book);
 }
 

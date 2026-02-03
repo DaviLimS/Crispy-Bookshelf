@@ -184,3 +184,7 @@ main {
 .title {
     margin-bottom: 0.5rem;
 }
+
+.read:hover {
+    cursor: pointer;
+}
