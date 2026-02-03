@@ -60,6 +60,7 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     book.querySelector('.author').textContent = `Author: ${bookObj.author}`;
     book.querySelector('.pages').textContent = `Pages: ${bookObj.pages}`;
     book.querySelector('.read').textContent = `Read: ${bookObj.read}`;
+    bookObj.read == 'Yes' ? book.querySelector('.read').style.color = 'Green' : book.querySelector('.read').style.color = 'Red';
 
     const cardDiv = book.querySelector('.book-card');
     book.id = bookObj.id;
