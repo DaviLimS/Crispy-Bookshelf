@@ -155,7 +155,8 @@ main {
 .book-card {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    width: 12rem;
+    height: 7rem;
     padding: 0.5rem;
     border: 1px solid black;
     border-radius: 15px;
