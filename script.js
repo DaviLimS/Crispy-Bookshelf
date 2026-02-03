@@ -83,9 +83,11 @@ function addBookToLibrary(name1, author1, pages1, read1) {
     readUpdate.addEventListener('click', (e) => {
         if (e.target.textContent.trim() == 'Read: Yes') {
             e.target.innerText = 'Read: No';
+            e.target.style.color = 'Red'
         }
         else {
             e.target.innerText = 'Read: Yes';
+            e.target.style.color = 'Green';
         }
     });
 
